@@ -2,21 +2,20 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
 
-
-<BorderPane xmlns:fx="http://javafx.com/fxml/1"
-	xmlns="http://javafx.com/javafx/8.0.231"
-	fx:controller="sample.Ventana1Controller">
-	<center>
-		<Button mnemonicParsing="false"
-			onAction="#onButtonAbrirClicked" text="Abrir"
-			BorderPane.alignment="CENTER" />
-	</center>
+<VBox alignment="CENTER" prefHeight="97.0" prefWidth="417.0" spacing="25.0" xmlns="http://javafx.com/javafx/8.0.231" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+	<children>
+		<Button maxWidth="150.0" mnemonicParsing="false" onAction="#onConfirmationClicked" text="Confirmación" />
+		<Button maxWidth="150.0" mnemonicParsing="false" onAction="#onErrorClicked" text="Error" />
+		<Button maxWidth="150.0" mnemonicParsing="false" onAction="#onInformationClicked" text="Information" />
+		<Button maxWidth="150.0" mnemonicParsing="false" onAction="#onWarningClicked" text="Alerta" />
+		<Button maxWidth="150.0" mnemonicParsing="false" onAction="#onPersonalizadoClicked" text="Personalizado" />
+	</children>
 	<opaqueInsets>
 		<Insets />
 	</opaqueInsets>
 	<padding>
-		<Insets bottom="100.0" left="100.0" right="100.0" top="100.0" />
+		<Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
 	</padding>
-</BorderPane>
+</VBox>
